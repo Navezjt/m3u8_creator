@@ -35,7 +35,7 @@ jobs:
 
       - name: Check *.M3u8 File existence
         id: check_files
-        uses: andstor/file-existence-action@v4
+        uses: andstor/file-existence-action@v3
         with:
           files: "./CompiledallStreams.m3u, ./epg/epg_ripper_ALL_SOURCES1.xml.gz"
 
@@ -572,7 +572,7 @@ jobs:
           branch: ${{ github.ref }} 
           
       - name: Commit All Files
-        uses: zwaldowski/git-commit-action@v4
+        uses: zwaldowski/git-commit-action@v1
         with:
              commit_message: Updated by Bot - ${{ steps.date.outputs.date }}
              working_directory: .
