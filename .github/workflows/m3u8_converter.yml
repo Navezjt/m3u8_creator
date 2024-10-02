@@ -31,7 +31,7 @@ jobs:
           git status
           
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v1
 
       - name: Check *.M3u8 File existence
         id: check_files
